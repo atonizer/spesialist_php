@@ -1,0 +1,7 @@
+# Apache server settings
+Options Indexes FollowSymLinks
+DirectoryIndex index.php
+
+
+# PHP Settings
+php_flag asp_tags off
