@@ -1,8 +1,19 @@
+<?php
+// To set locals and choose settings
+setlocale(LC_ALL, "english");
+//setlocale(LC_ALL, "russian");
+$day = strftime('%d');
+$month = strftime('%B');
+//$month = iconv('windows-1251', 'utf-8', $month);
+$year = strftime('%Y');
+$wday = strftime('%A');
+?>
+
 <!DOCTYPE html>
 <html>
 
 <head>
-  <title>Сайт нашей школы</title>
+  <title>The website of our school</title>
   <meta charset="utf-8" />
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -10,53 +21,55 @@
 <body>
 
   <div id="header">
-    <!-- Верхняя часть страницы -->
-    <img src="logo.gif" width="187" height="29" alt="Наш логотип" class="logo" />
-    <span class="slogan">приходите к нам учиться</span>
-    <!-- Верхняя часть страницы -->
+    <!-- The upper part of the page -->
+    <img src="logo.gif" width="187" height="29" alt="Our logo" class="logo" />
+    <span class="slogan">Please, visit our office</span>
+    <!-- The upper part of the page -->
   </div>
 
   <div id="content">
-    <!-- Заголовок -->
-    <h1>Добро пожаловать на наш сайт!</h1>
-    <!-- Заголовок -->
-    <!-- Область основного контента -->
-    <h3>Зачем мы ходим в школу?</h3>
+    <!-- Header -->
+    <h1>Welcome to our website!</h1>
+    <!-- Header -->
+    <!-- Main content -->
+    <h3>Why we are attending school?</h3>
+    <blockquote>
+      <?php
+      echo "Today is $day of $month $year, $wday";
+      ?>
+    </blockquote>
     <p>
-      У нас каждую минуту что-то происходит и кипит жизнь. Проходят уроки и шумят перемены, кто-то отвечает у доски, кто-то отчаянно зубрит перед контрольной пройденный материал, кому-то ставят «пятерку» за сочинение, кого-то ругают за непрочитанную книгу, на школьной спортивной площадке ребята играют в футбол, а девочки – в волейбол, некоторые готовятся к соревнованиям, другие участвуют в репетициях праздников…
-    </p>
-    <h3>Что такое ЕГЭ?</h3>
+      We have every moment that something is happening and full of life. Take lessons and noise changes, someone responsible at the board, someone desperately crams to control the material covered, someone put the "five" for the essay, someone blamed for unread book on the school playground children playing soccer, and girls - volleyball, some are preparing for a competition, others are involved in rehearsals holidays ...    </p>
+    <h3>What is USE?</h3>
     <p>
-      Аббревиатура ЕГЭ расшифровывается как "Единый Государственный Экзамен". Почему "единый"? ЕГЭ одновременно является и вступительным экзаменом в ВУЗ и итоговой оценкой каждого выпускника школы. К тому же на всей территории России используются однотипные задания и единая система оценки.
-    </p>
+      USE stands for "Unified State Exam." Why is the "single"? CSE is both entrance exam and the final evaluation of each graduate school. In addition, the entire territory of Russia used the same type of tasks and single evaluation system.    </p>
     <p>
-      Результаты ЕГЭ оцениваются по 100-балльной и пятибалльной системам и заносятся в свидетельство о результатах единого государственного экзамена. Срок действия данного документа истекает 31 декабря года, следующего за годом его выдачи, поэтому у абитуриентов есть возможность поступать в ВУЗы со свидетельством ЕГЭ в течение двух лет.
-    </p>
-    <!-- Область основного контента -->
+      Exam results are evaluated on a 100-point and five-point system and recorded in the certificate of the results of the unified state exam. The validity of this document expires on 31 December of the year following the year of issue, so students have the opportunity to enroll in college entrance exam with a certificate for two years.    </p>
+    <!-- Main content -->
   </div>
   <div id="nav">
-    <!-- Навигация -->
-    <h2>Навигация по сайту</h2>
-    <!-- Меню -->
+    <!-- Navigation -->
+    <h2>Navigation bar</h2>
+    <!-- Menu -->
     <ul>
-      <li><a href='index.php'>Домой</a>
+      <li><a href='index.php'>Home</a>
       </li>
-      <li><a href='about.php'>О нас</a>
+      <li><a href='about.php'>About</a>
       </li>
-      <li><a href='contact.php'>Контакты</a>
+      <li><a href='contact.php'>Contacts</a>
       </li>
-      <li><a href='table.php'>Таблица умножения</a>
+      <li><a href='table.php'>Multiplication table</a>
       </li>
-      <li><a href='calc.php'>Калькулятор</a>
+      <li><a href='calc.php'>Calculator</a>
       </li>
     </ul>
-    <!-- Меню -->
-    <!-- Навигация -->
+    <!-- Menu -->
+    <!-- Navigation -->
   </div>
   <div id="footer">
-    <!-- Нижняя часть страницы -->
-    &copy; Супер Мега Веб-мастер, 2000 &ndash; 2016
-    <!-- Нижняя часть страницы -->
+    <!-- Footer -->
+    &copy; Super Mega Webmaster, 2000 &ndash; <?=$year?>
+    <!-- Footer -->
   </div>
 </body>
 

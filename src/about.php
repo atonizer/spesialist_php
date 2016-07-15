@@ -10,54 +10,53 @@
 <body>
 
   <div id="header">
-    <!-- Верхняя часть страницы -->
-    <img src="logo.gif" width="187" height="29" alt="Наш логотип" class="logo" />
-    <span class="slogan">приходите к нам учиться</span>
-    <!-- Верхняя часть страницы -->
+    <!-- The upper part of the page -->
+    <img src="logo.gif" width="187" height="29" alt="Our logo" class="logo" />
+    <span class="slogan">Please, visit our office</span>
+    <!-- The upper part of the page -->
   </div>
 
   <div id="content">
-    <!-- Заголовок -->
-    <h1>О нашем сайте</h1>
-    <!-- Заголовок -->
-    <!-- Область основного контента -->
+    <!-- Header -->
+    <h1>About our website</h1>
+    <!-- Header -->
+    <!-- Main content-->
     <p>
-      Сайт создан на общественных началах и управляется на некоммерческой основе. Все фотографии и материалы предоставлены и используются с ведома и при участии администрации школы.
-    </p>
-    <h3>Цели создания проекта</h3>
+      The site is created on a voluntary basis and is managed on a non commercial basis. All photos and materials provided by and used with the knowledge and participation of school administration.    </p>
+    <h3>Project Aims</h3>
     <ol>
-      <li>поднятие престижа нашей школы.</li>
-      <li>для информирования родителей будущих учеников нашей школы.</li>
-      <li>для возобновления утраченных связей между выпускниками и учителями, с предоставлением им информационного пространства для общения.</li>
-      <li>для общения учеников во внеурочное время.</li>
+      <li>raising the prestige of our school.</li>
+      <li>to inform parents of the future students of our school.</li>
+      <li>for resuming lost ties between alumni and teachers, providing them with the information space for communication.</li>
+      <li>for students communication outside school hours.</li>
     </ol>
-    <h3>Советы и предупреждения</h3>
+    <h3>Tips & Warnings</h3>
     <p>
-      Сайт оптимизирован под все браузеры. Наилучшее качество просмотра достигается при разрешении экрана монитора - 1280 на 1024 точек.
+      The site is optimized for all browsers. Best viewing is achieved with a resolution of the monitor screen - 1280 by 1024 pixels.
     </p>
-    <!-- Область основного контента -->
+    <!-- Main content-->
   </div>
   <div id="nav">
-    <h2>Навигация по сайту</h2>
-    <!-- Меню -->
+    <h2>Navigation bar</h2>
+    <!-- Menu -->
     <ul>
-      <li><a href='index.php'>Домой</a>
+      <li><a href='index.php'>Home</a>
       </li>
-      <li><a href='about.php'>О нас</a>
+      <li><a href='about.php'>About</a>
       </li>
-      <li><a href='contact.php'>Контакты</a>
+      <li><a href='contact.php'>Contacts</a>
       </li>
-      <li><a href='table.php'>Таблица умножения</a>
+      <li><a href='table.php'>Multiplication table</a>
       </li>
-      <li><a href='calc.php'>Калькулятор</a>
+      <li><a href='calc.php'>Calculator</a>
       </li>
     </ul>
-    <!-- Меню -->
+    <!-- Menu -->
   </div>
   <div id="footer">
-    <!-- Нижняя часть страницы -->
-    &copy; Супер Мега Веб-мастер, 2000 &ndash; 2015
-    <!-- Нижняя часть страницы -->
+    <!-- Footer -->
+    &copy; Super Mega Webmaster, 2000 &ndash; 2015
+    <!-- Footer -->
   </div>
 </body>
 

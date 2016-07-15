@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>Контакты</title>
+  <title>Contacts</title>
   <meta charset="utf-8" />
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -10,55 +10,55 @@
 <body>
 
   <div id="header">
-    <!-- Верхняя часть страницы -->
-    <img src="logo.gif" width="187" height="29" alt="Наш логотип" class="logo" />
-    <span class="slogan">приходите к нам учиться</span>
-    <!-- Верхняя часть страницы -->
+    <!-- The upper part of the page -->
+    <img src="logo.gif" width="187" height="29" alt="Our logo" class="logo" />
+    <span class="slogan">Please, visit our office</span>
+    <!-- The upper part of the page -->
   </div>
 
   <div id="content">
-    <!-- Заголовок -->
-    <h1>Обратная связь</h1>
-    <!-- Заголовок -->
-    <!-- Область основного контента -->
-    <h3>Адрес</h3>
-    <p>123456 Москва, Малый Американский переулок 21</p>
-    <h3>Задайте вопрос</h3>
+    <!-- Header -->
+    <h1>Feedback</h1>
+    <!-- Header -->
+    <!-- Main content-->
+    <h3>Address</h3>
+    <p>123456 Moscow, Small American Lane 21</p>
+    <h3>Ask a question</h3>
     <form action='' method='post'>
-      <label>Тема письма: </label>
+      <label>Letter subject: </label>
       <br />
       <input name='subject' type='text' size="50" />
       <br />
-      <label>Содержание: </label>
+      <label>Content: </label>
       <br />
       <textarea name='body' cols="50" rows="10"></textarea>
       <br />
       <br />
-      <input type='submit' value='Отправить' />
+      <input type='submit' value='Send' />
     </form>
-    <!-- Область основного контента -->
+    <!-- Main content-->
   </div>
   <div id="nav">
-    <h2>Навигация по сайту</h2>
-    <!-- Меню -->
+    <h2>Navigation bar</h2>
+    <!-- Menu -->
     <ul>
-      <li><a href='index.php'>Домой</a>
+      <li><a href='index.php'>Home</a>
       </li>
-      <li><a href='about.php'>О нас</a>
+      <li><a href='about.php'>About</a>
       </li>
-      <li><a href='contact.php'>Контакты</a>
+      <li><a href='contact.php'>Contacts</a>
       </li>
-      <li><a href='table.php'>Таблица умножения</a>
+      <li><a href='table.php'>Multiplication table</a>
       </li>
-      <li><a href='calc.php'>Калькулятор</a>
+      <li><a href='calc.php'>Calculator</a>
       </li>
     </ul>
-    <!-- Меню -->
+    <!-- Menu -->
   </div>
   <div id="footer">
-    <!-- Нижняя часть страницы -->
-    &copy; Супер Мега Веб-мастер, 2000 &ndash; 2015
-    <!-- Нижняя часть страницы -->
+    <!-- Footer -->
+    &copy; Super Mega Webmaster, 2000 &ndash; 2015
+    <!-- Footer -->
   </div>
 </body>
 

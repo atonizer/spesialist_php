@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>Калькулятор</title>
+  <title>Calculator</title>
   <meta charset="utf-8" />
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -10,56 +10,56 @@
 <body>
 
   <div id="header">
-    <!-- Верхняя часть страницы -->
-    <img src="logo.gif" width="187" height="29" alt="Наш логотип" class="logo" />
-    <span class="slogan">приходите к нам учиться</span>
-    <!-- Верхняя часть страницы -->
+    <!-- The upper part of the page -->
+    <img src="logo.gif" width="187" height="29" alt="Our logo" class="logo" />
+    <span class="slogan">Please, visit our office</span>
+    <!-- The upper part of the page -->
   </div>
 
   <div id="content">
-    <!-- Заголовок -->
-    <h1>Калькулятор школьника</h1>
-    <!-- Заголовок -->
-    <!-- Область основного контента -->
+    <!-- Header -->
+    <h1>School Calculator</h1>
+    <!-- Header -->
+    <!-- Main content-->
     <form action=''>
-      <label>Число 1:</label>
+      <label>Operand 1:</label>
       <br />
       <input name='num1' type='text' />
       <br />
-      <label>Оператор: </label>
+      <label>Operator: </label>
       <br />
       <input name='operator' type='text' />
       <br />
-      <label>Число 2: </label>
+      <label>Operand 2: </label>
       <br />
       <input name='num2' type='text' />
       <br />
       <br />
       <input type='submit' value='Считать'>
     </form>
-    <!-- Область основного контента -->
+    <!-- Main content-->
   </div>
   <div id="nav">
-    <h2>Навигация по сайту</h2>
-    <!-- Меню -->
+    <h2>Navigation bar</h2>
+    <!-- Menu -->
     <ul>
-      <li><a href='index.php'>Домой</a>
+      <li><a href='index.php'>Home</a>
       </li>
-      <li><a href='about.php'>О нас</a>
+      <li><a href='about.php'>About</a>
       </li>
-      <li><a href='contact.php'>Контакты</a>
+      <li><a href='contact.php'>Contacts</a>
       </li>
-      <li><a href='table.php'>Таблица умножения</a>
+      <li><a href='table.php'>Multiplication table</a>
       </li>
-      <li><a href='calc.php'>Калькулятор</a>
+      <li><a href='calc.php'>Calculator</a>
       </li>
     </ul>
-    <!-- Меню -->
+    <!-- Menu -->
   </div>
   <div id="footer">
-    <!-- Нижняя часть страницы -->
-    &copy; Супер Мега Веб-мастер, 2000 &ndash; 2015
-    <!-- Нижняя часть страницы -->
+    <!-- Footer -->
+    &copy; Super Mega Webmaster, 2000 &ndash; 2015
+    <!-- Footer -->
   </div>
 </body>
 

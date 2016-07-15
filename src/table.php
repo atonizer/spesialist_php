@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>Таблица умножения</title>
+  <title>Multiplication table</title>
   <meta charset="utf-8" />
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -10,34 +10,34 @@
 <body>
 
   <div id="header">
-    <!-- Верхняя часть страницы -->
-    <img src="logo.gif" width="187" height="29" alt="Наш логотип" class="logo" />
-    <span class="slogan">приходите к нам учиться</span>
-    <!-- Верхняя часть страницы -->
+    <!-- The upper part of the page -->
+    <img src="logo.gif" width="187" height="29" alt="Our logo" class="logo" />
+    <span class="slogan">Please, visit our office</span>
+    <!-- The upper part of the page -->
   </div>
 
   <div id="content">
-    <!-- Заголовок -->
-    <h1>Таблица умножения</h1>
-    <!-- Заголовок -->
-    <!-- Область основного контента -->
+    <!-- Header -->
+    <h1>Multiplication table</h1>
+    <!-- Header -->
+    <!-- Main content-->
     <form action=''>
-      <label>Количество колонок: </label>
+      <label>Number of of columns: </label>
       <br />
       <input name='cols' type='text' value="" />
       <br />
-      <label>Количество строк: </label>
+      <label>Number of lines: </label>
       <br />
       <input name='rows' type='text' value="" />
       <br />
-      <label>Цвет: </label>
+      <label>Color: </label>
       <br />
       <input name='color' type='text' value="" />
       <br />
       <br />
-      <input type='submit' value='Создать' />
+      <input type='submit' value='Create' />
     </form>
-    <!-- Таблица -->
+    <!-- Table -->
     <table border='1' width="200">
       <tr>
         <td>1</td>
@@ -75,30 +75,30 @@
         <td>25</td>
       </tr>
     </table>
-    <!-- Таблица -->
-    <!-- Область основного контента -->
+    <!-- Table -->
+    <!-- Main content-->
   </div>
   <div id="nav">
-    <h2>Навигация по сайту</h2>
-    <!-- Меню -->
+    <h2>Navigation bar</h2>
+    <!-- Menu -->
     <ul>
-      <li><a href='index.php'>Домой</a>
+      <li><a href='index.php'>Home</a>
       </li>
-      <li><a href='about.php'>О нас</a>
+      <li><a href='about.php'>About</a>
       </li>
-      <li><a href='contact.php'>Контакты</a>
+      <li><a href='contact.php'>Contacts</a>
       </li>
-      <li><a href='table.php'>Таблица умножения</a>
+      <li><a href='table.php'>Multiplication table</a>
       </li>
-      <li><a href='calc.php'>Калькулятор</a>
+      <li><a href='calc.php'>Calculator</a>
       </li>
     </ul>
-    <!-- Меню -->
+    <!-- Menu -->
   </div>
   <div id="footer">
-    <!-- Нижняя часть страницы -->
-    &copy; Супер Мега Веб-мастер, 2000 &ndash; 2015
-    <!-- Нижняя часть страницы -->
+    <!-- Footer -->
+    &copy; Super Mega Webmaster, 2000 &ndash; 2015
+    <!-- Footer -->
   </div>
 </body>
 
