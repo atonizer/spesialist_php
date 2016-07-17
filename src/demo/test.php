@@ -20,4 +20,16 @@ echo AAA;
 
 <?php
 $name = "John";
+
+echo <<<HEREDOC
+Hello
+       $name
+HEREDOC;
+
+echo <<<'NOWDOC'
+Hello
+       $name
+NOWDOC;
+
+
 ?>
