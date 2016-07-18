@@ -74,17 +74,31 @@ endif;
     <!-- Navigation -->
     <h2>Navigation bar</h2>
     <!-- Menu -->
+    <?php
+    $leftMenu = [
+        array('link'=>'Home', 'href'=>'index.php'),
+        array('link'=>'About', 'href'=>'about.php'),
+        array('link'=>'Contacts', 'href'=>'contact.php'),
+        array('link'=>'Multiplication table', 'href'=>'table.php'),
+        array('link'=>'Calculator', 'href'=>'calc.php')
+    ];
+    ?>
     <ul>
-        <li><a href='index.php'>Home</a>
-        </li>
-        <li><a href='about.php'>About</a>
-        </li>
-        <li><a href='contact.php'>Contacts</a>
-        </li>
-        <li><a href='table.php'>Multiplication table</a>
-        </li>
-        <li><a href='calc.php'>Calculator</a>
-        </li>
+        <li><a href='<?= $leftMenu[0]['href']?>'><?= $leftMenu[0]['link']?></a></li>
+        <li><a href='<?= $leftMenu[1]['href']?>'><?= $leftMenu[1]['link']?></a></li>
+        <li><a href='<?= $leftMenu[2]['href']?>'><?= $leftMenu[2]['link']?></a></li>
+        <li><a href='<?= $leftMenu[3]['href']?>'><?= $leftMenu[3]['link']?></a></li>
+        <li><a href='<?= $leftMenu[4]['href']?>'><?= $leftMenu[4]['link']?></a></li>
+<!--        <li><a href='index.php'>Home</a>-->
+<!--        </li>-->
+<!--        <li><a href='about.php'>About</a>-->
+<!--        </li>-->
+<!--        <li><a href='contact.php'>Contacts</a>-->
+<!--        </li>-->
+<!--        <li><a href='table.php'>Multiplication table</a>-->
+<!--        </li>-->
+<!--        <li><a href='calc.php'>Calculator</a>-->
+<!--        </li>-->
     </ul>
     <!-- Menu -->
     <!-- Navigation -->
