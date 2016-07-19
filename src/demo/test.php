@@ -65,10 +65,25 @@
 //    $i++;
 //}
 
-
-
 ?>
 
+<?php
+//$arr = [
+//    "name"=>"John",
+//    "login"=>"root",
+//    "age"=>25
+//];
+//
+//foreach ($arr as $key=>$value){
+//    echo "<br/>$key: $value\n";
+//}
+
+$nums = [1,2,3,4,5];
+print_r($nums);
+foreach ($nums as &$num)
+    $num *=10;
+print_r($nums);
+?>
 
 
 

@@ -1,6 +1,7 @@
 <?php
 $cols = 10;
 $rows = 10;
+$color = "yellow";
 ?>
 
 <!DOCTYPE html>
@@ -44,15 +45,18 @@ $rows = 10;
     </form>
     <!-- Table -->
     <?php
-    echo "<table border='1'>";
+    echo "<table border='1'>\n";
     for ($tr = 1; $tr <= $rows; $tr++) {
-        echo "<tr>";
+        echo "\t<tr>\n";
         for ($td = 1; $td <= $cols; $td++) {
-            echo "<td>" . $tr * $td . "</td>";
+            if($tr==1 || $td==1)
+                echo "\t<th style='background:$color'>" . $tr * $td . "</th>\n";
+            else
+                echo "\t<td>" . $tr * $td . "</td>\n";
         }
-        echo "</tr>";
+        echo "\t</tr>\n";
     }
-    echo "</table>";
+    echo "</table>\n";
     ?>
     <!-- Table -->
     <!-- Main content-->
