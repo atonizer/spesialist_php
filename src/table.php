@@ -1,9 +1,20 @@
 <?php
-$cols = 10;
-$rows = 10;
-$color = "yellow";
+function drawTable($cols = 10, $rows = 10, $color = "yellow")
+{
+    echo "<table border='1'>\n";
+    for ($tr = 1; $tr <= $rows; $tr++) {
+        echo "\t<tr>\n";
+        for ($td = 1; $td <= $cols; $td++) {
+            if ($tr == 1 || $td == 1)
+                echo "\t<th style='background:$color'>" . $tr * $td . "</th>\n";
+            else
+                echo "\t<td>" . $tr * $td . "</td>\n";
+        }
+        echo "\t</tr>\n";
+    }
+    echo "</table>\n";
+}
 ?>
-
 <!DOCTYPE html>
 <html>
 
@@ -45,18 +56,7 @@ $color = "yellow";
     </form>
     <!-- Table -->
     <?php
-    echo "<table border='1'>\n";
-    for ($tr = 1; $tr <= $rows; $tr++) {
-        echo "\t<tr>\n";
-        for ($td = 1; $td <= $cols; $td++) {
-            if($tr==1 || $td==1)
-                echo "\t<th style='background:$color'>" . $tr * $td . "</th>\n";
-            else
-                echo "\t<td>" . $tr * $td . "</td>\n";
-        }
-        echo "\t</tr>\n";
-    }
-    echo "</table>\n";
+    drawTable();
     ?>
     <!-- Table -->
     <!-- Main content-->
