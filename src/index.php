@@ -1,5 +1,16 @@
 <?php
-
+function drawMenu($menu, $vertical=true){
+    $style = "";
+    if(!$vertical)
+        $style = " style='display:inline; margin-right:15px'";
+    echo "<ul>";
+    foreach ($menu as $item){
+        echo "<li$style>";
+        echo "<a href='{$item['href']}'>{$item['link']}</a>";
+        echo "</li>";
+    }
+    echo "</ul>";
+}
 // Menu
 $leftMenu = [
     array('link'=>'Home', 'href'=>'index.php'),
@@ -85,19 +96,17 @@ endif;
     <h2>Navigation bar</h2>
     <!-- Menu -->
     <?php
-    echo "<ul>";
-    foreach ($leftMenu as $item){
-        echo "<li>";
-        echo "<a href='{$item['href']}'>{$item['link']}</a>";
-        echo "</li>";
-    }
-    echo "</ul>";
+    drawMenu($leftMenu);
     ?>
     <!-- Menu -->
     <!-- Navigation -->
 </div>
 <div id="footer">
     <!-- Footer -->
+    <?php
+    drawMenu($leftMenu, false);
+    ?>
+    <hr>
     &copy; Super Mega Webmaster, 2000 &ndash; <?= $year ?>
     <!-- Footer -->
 </div>

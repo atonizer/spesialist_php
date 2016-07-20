@@ -86,14 +86,34 @@
 ?>
 
 <?php
-function say($name="Guest", $h=3){
-    echo "<h$h>Hello, $name!</h$h>";
+//function say($name="Guest", $h=3){
+//    echo "<h$h>Hello, $name!</h$h>";
+//}
+//
+//say("John", 1);
+//$n = "Mike";
+//say($n);
+//say();
+?>
+
+<?php
+function my_count($var, $mode=0) {
+    if(is_null($var)) return 0;
+    if(!is_array($var)) return 1;
+    $cnt = 0;
+    foreach ($var as $v)
+        if(is_array($v) and $mode)
+            $cnt += my_count($v, 1);
+        $cnt++;
+    return $cnt;
 }
 
-say("John", 1);
-$n = "Mike";
-say($n);
-say();
+function foo(){
+    echo func_num_args();
+    print_r(func_get_args());
+    echo func_get_arg(2);
+}
+foo(1,2,3,4,5);
 ?>
 
 
