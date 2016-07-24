@@ -1,4 +1,6 @@
 <?php
+error_reporting(0);
+set_error_handler("myErrorHandler");
 require_once "inc/lib.inc.php";
 require_once "inc/data.inc.php";
 // To set locals and choose settings

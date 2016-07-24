@@ -1,4 +1,6 @@
 <?php
+const ERROR_ON_DRAW_MENU = "There was an error. Please contact site admin";
+
 $leftMenu = array(
     array('link'=>'Home', 'href'=>'index.php'),
     array('link'=>'About', 'href'=>'about.php'),
