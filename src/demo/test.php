@@ -97,27 +97,45 @@
 ?>
 
 <?php
-function my_count($var, $mode=0) {
-    if(is_null($var)) return 0;
-    if(!is_array($var)) return 1;
-    $cnt = 0;
-    foreach ($var as $v)
-        if(is_array($v) and $mode)
-            $cnt += my_count($v, 1);
-        $cnt++;
-    return $cnt;
-}
-
-function foo(){
-    echo func_num_args();
-    print_r(func_get_args());
-    echo func_get_arg(2);
-}
-foo(1,2,3,4,5);
+//function my_count($var, $mode=0) {
+//    if(is_null($var)) return 0;
+//    if(!is_array($var)) return 1;
+//    $cnt = 0;
+//    foreach ($var as $v)
+//        if(is_array($v) and $mode)
+//            $cnt += my_count($v, 1);
+//        $cnt++;
+//    return $cnt;
+//}
+//
+//function foo(){
+//    echo func_num_args();
+//    print_r(func_get_args());
+//    echo func_get_arg(2);
+//}
+//foo(1,2,3,4,5);
 ?>
+<!---->
+<?php
+//$x = mktime(0,0,0,7,23,2016);
+////echo strftime("%d - %Y", 1234567890);
+//echo date("d-m-Y H:i:s", 1234567890);
+//
+////print_r(getdate($x));
+?>
+<?php
 
+//print_r(get_defined_constants(true));
+//print_r($GLOBALS);
 
-
+?>
+<h1>BEFORE</h1>
+<?php
+error_reporting(0);
+include "test.inc.php";
+//    require "test.inc.php";
+?>
+<h1>AFTER</h1>
 
 
 

@@ -1,25 +1,6 @@
 <?php
-function drawMenu($menu, $vertical=true){
-    $style = "";
-    if(!$vertical)
-        $style = " style='display:inline; margin-right:15px'";
-    echo "<ul>";
-    foreach ($menu as $item){
-        echo "<li$style>";
-        echo "<a href='{$item['href']}'>{$item['link']}</a>";
-        echo "</li>";
-    }
-    echo "</ul>";
-}
-// Menu
-$leftMenu = [
-    array('link'=>'Home', 'href'=>'index.php'),
-    array('link'=>'About', 'href'=>'about.php'),
-    array('link'=>'Contacts', 'href'=>'contact.php'),
-    array('link'=>'Multiplication table', 'href'=>'table.php'),
-    array('link'=>'Calculator', 'href'=>'calc.php')
-];
-
+require_once "inc/lib.inc.php";
+require_once "inc/data.inc.php";
 // To set locals and choose settings
 setlocale(LC_ALL, "english");
 //setlocale(LC_ALL, "russian");
@@ -58,8 +39,9 @@ endif;
 
 <div id="header">
     <!-- The upper part of the page -->
-    <img src="logo.gif" width="187" height="29" alt="Our logo" class="logo"/>
-    <span class="slogan">Please, visit our office</span>
+    <?php
+    require_once "inc/top.inc.php";
+    ?>
     <!-- The upper part of the page -->
 </div>
 
@@ -68,46 +50,23 @@ endif;
     <h1><?= $welcome ?>! Welcome to our website!</h1>
     <!-- Header -->
     <!-- Main content -->
-    <h3>Why we are attending school?</h3>
-    <blockquote>
-        <?php
-        echo "Today is $day of $month $year, $wday";
-        ?>
-    </blockquote>
-    <p>
-        We have every moment that something is happening and full of life. Take lessons and noise changes, someone
-        responsible at the board, someone desperately crams to control the material covered, someone put the "five" for
-        the essay, someone blamed for unread book on the school playground children playing soccer, and girls -
-        volleyball, some are preparing for a competition, others are involved in rehearsals holidays ... </p>
-    <h3>What is USE?</h3>
-    <p>
-        USE stands for "Unified State Exam." Why is the "single"? CSE is both entrance exam and the final evaluation of
-        each graduate school. In addition, the entire territory of Russia used the same type of tasks and single
-        evaluation system. </p>
-    <p>
-        Exam results are evaluated on a 100-point and five-point system and recorded in the certificate of the results
-        of the unified state exam. The validity of this document expires on 31 December of the year following the year
-        of issue, so students have the opportunity to enroll in college entrance exam with a certificate for two
-        years. </p>
+    <?php
+    require_once "inc/content.inc.php";
+    ?>
     <!-- Main content -->
 </div>
 <div id="nav">
     <!-- Navigation -->
-    <h2>Navigation bar</h2>
-    <!-- Menu -->
     <?php
-    drawMenu($leftMenu);
+    include_once "inc/nav.inc.php";
     ?>
-    <!-- Menu -->
     <!-- Navigation -->
 </div>
 <div id="footer">
     <!-- Footer -->
     <?php
-    drawMenu($leftMenu, false);
+    require_once "inc/footer.inc.php";
     ?>
-    <hr>
-    &copy; Super Mega Webmaster, 2000 &ndash; <?= $year ?>
     <!-- Footer -->
 </div>
 </body>
