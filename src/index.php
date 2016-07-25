@@ -27,12 +27,35 @@ else:
     $welcome = "Good night";
 endif;
 
+// Page header initializing
+$title = "The website of our school";
+$header = "$welcome! Welcome to our website!";
+$id = strtolower(strip_tags(trim($_GET['id'])));
+switch ($id) {
+    case 'about':
+        $title = 'About';
+        $header = 'About our website';
+        break;
+    case 'contact':
+        $title = 'Contacts';
+        $header = 'Feedback';
+        break;
+    case 'table':
+        $title = 'Multiplication table';
+        $header = 'Multiplication table';
+        break;
+    case 'calc':
+        $title = 'Calculator';
+        $header = 'School Calculator';
+        break;
+}
+
 ?>
 <!DOCTYPE html>
 <html>
 
 <head>
-    <title>The website of our school</title>
+    <title><?php echo $title ?></title>
     <meta charset="utf-8"/>
     <link rel="stylesheet" href="style.css"/>
 </head>
@@ -49,11 +72,26 @@ endif;
 
 <div id="content">
     <!-- Header -->
-    <h1><?= $welcome ?>! Welcome to our website!</h1>
+    <h1><?php echo $header ?></h1>
     <!-- Header -->
     <!-- Main content -->
     <?php
-    require_once "inc/content.inc.php";
+    switch ($id) {
+        case 'about':
+            include 'about.php';
+            break;
+        case 'contact':
+            include 'contact.php';
+            break;
+        case 'table':
+            include 'table.php';
+            break;
+        case 'calc':
+            include 'calc.php';
+            break;
+        default:
+            include 'inc/content.inc.php';
+    }
     ?>
     <!-- Main content -->
 </div>

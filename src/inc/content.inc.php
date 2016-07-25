@@ -1,7 +1,7 @@
 <h3>Why we are attending school?</h3>
 <blockquote>
     <?php
-    echo "Today is $day of $month $year, $wday";
+    echo "Today: $wday, $month $day, $year";
     ?>
 </blockquote>
 <p>
